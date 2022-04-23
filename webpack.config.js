@@ -4,6 +4,7 @@ const path = require("path");
 module.exports = {
   entry: {
     main: "./src/index.tsx",
+    styles: "./src/styles/index.css",
   },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
@@ -14,7 +15,17 @@ module.exports = {
     clean: true,
   },
   module: {
-    rules: [{ test: /\.tsx?/i, loader: "babel-loader" }],
+    rules: [
+      { test: /\.tsx?/i, loader: "babel-loader" },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        type: "asset/resource",
+      },
+    ],
   },
   plugins: [new HtmlWebpackPlugin({ template: "./public/index.html" })],
   devServer: {

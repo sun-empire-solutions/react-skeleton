@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0px;
+    background-color: hsl(216, 12%, 8%);
+}
+.body{
+    height: 100vh;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.logo-react-img img{ 
+    height: 200px;
+    width: 200px;
+}
+.body-text p{
+    color: white;
+}
+.body-text{
+    margin-top: 20px;
+}
+
+.link-footer{
+    margin-top: 10px;
+}
+.link-footer a{   
+    color: hsl(220, 98%, 61%);
+}
+
+
