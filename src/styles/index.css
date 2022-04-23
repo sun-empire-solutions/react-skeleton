@@ -1,40 +1,44 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0px;
-    background-color: hsl(216, 12%, 8%);
-}
-.body{
-    height: 100vh;
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0px;
+  font-family: "Roboto", sans-serif;
 }
 
-.logo-react-img img{ 
-    height: 200px;
-    width: 200px;
-}
-.body-text p{
-    color: white;
-}
-.body-text{
-    margin-top: 20px;
+.react-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #20232a;
 }
 
-.link-footer{
-    margin-top: 10px;
-}
-.link-footer a{   
-    color: hsl(220, 98%, 61%);
+.react-logo img {
+  height: 200px;
+  width: 200px;
+  animation: logo-spin infinite 10s linear;
 }
 
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
+.react-container__content {
+  margin-top: 3rem;
+  color: white;
+}
+
+.react-container__footer {
+  margin-top: 1.5rem;
+}
+
+.react-container__footer a {
+  text-decoration: none;
+  color: hsl(199, 98%, 61%);
+}

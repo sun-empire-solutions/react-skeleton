@@ -1,25 +1,19 @@
-
 // @ts-ignore
 import logo from "./assets/images/logo-react.png";
 
-const App= () =>{
-
-return(
-<div className="body">
-    <div className="container">
-        <div className="logo-react-img">
-            <img className="rotate" src={logo} alt=""/>
-        </div>
-        <div className="body-text">
-            <p>Edit src/App.js and save to reload</p><p/>
-        </div>
-        <div className="link-footer">
-            <a href="#">Learn React</a>
-        </div>
+const App = () => {
+  return (
+    <div className="react-container">
+      <div className="react-logo">
+        <img className="rotate" src={logo} alt="" />
+      </div>
+      <div className="react-container__content">
+        <h3>Edit src/App.tsx and save to reload</h3>
+      </div>
+      <div className="react-container__footer">
+        <a href="https://reactjs.org/docs/getting-started.html">Learn React</a>
+      </div>
     </div>
-</div>
-);
-}
-export {App};
-
-
+  );
+};
+export { App };
