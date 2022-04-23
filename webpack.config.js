@@ -16,13 +16,13 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.tsx?/i, loader: "babel-loader" },
+      { test: /\.tsx?$/i, loader: "babel-loader" },
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(jpe?g|png|gif|svg|icon)$/i,
         type: "asset/resource",
       },
     ],
